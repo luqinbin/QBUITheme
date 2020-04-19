@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FB62EAF59CC94C8A44C33EA /* Pods_QBUIThemeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51BCD945C9F0D39FAFD7EAC7 /* Pods_QBUIThemeTests.framework */; };
+		8E429C2F244A1282007B9BE0 /* QBUIThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E429C2E244A1282007B9BE0 /* QBUIThemeManager.m */; };
+		8E6D7E0A244B28DD0001DE00 /* QBUIThemeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6D7E09244B28DD0001DE00 /* QBUIThemeUtils.m */; };
+		8E6D7E0E244B3CCB0001DE00 /* UIVisualEffectView+QBUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6D7E0D244B3CCB0001DE00 /* UIVisualEffectView+QBUITheme.m */; };
+		8E6D7E11244B485E0001DE00 /* UIVisualEffect+QBUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6D7E10244B485E0001DE00 /* UIVisualEffect+QBUITheme.m */; };
+		8E6D7E14244B4B0E0001DE00 /* QBDynamicVisualEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6D7E13244B4B0E0001DE00 /* QBDynamicVisualEffect.m */; };
+		8E6D7E18244B55A40001DE00 /* UIView+QBUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6D7E17244B55A40001DE00 /* UIView+QBUITheme.m */; };
+		8E788D722448B3A7008A1526 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E788D712448B3A7008A1526 /* AppDelegate.m */; };
+		8E788D752448B3A7008A1526 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E788D742448B3A7008A1526 /* SceneDelegate.m */; };
+		8E788D782448B3A7008A1526 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E788D772448B3A7008A1526 /* ViewController.m */; };
+		8E788D7B2448B3A7008A1526 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E788D792448B3A7008A1526 /* Main.storyboard */; };
+		8E788D7D2448B3A9008A1526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E788D7C2448B3A9008A1526 /* Assets.xcassets */; };
+		8E788D802448B3A9008A1526 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E788D7E2448B3A9008A1526 /* LaunchScreen.storyboard */; };
+		8E788D832448B3A9008A1526 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E788D822448B3A9008A1526 /* main.m */; };
+		8E788D8D2448B3A9008A1526 /* QBUIThemeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E788D8C2448B3A9008A1526 /* QBUIThemeTests.m */; };
+		8E788D982448B3A9008A1526 /* QBUIThemeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E788D972448B3A9008A1526 /* QBUIThemeUITests.m */; };
+		8E788DAA2448B6ED008A1526 /* UIColor+QBUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E788DA92448B6ED008A1526 /* UIColor+QBUITheme.m */; };
+		8E788DAE2448C133008A1526 /* QBDynamicImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E788DAD2448C133008A1526 /* QBDynamicImage.m */; };
+		8E788DB12448C3F8008A1526 /* UIImage+QBUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E788DB02448C3F8008A1526 /* UIImage+QBUITheme.m */; };
+		8E788DB924499D4D008A1526 /* ViewControllerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E788DB824499D4D008A1526 /* ViewControllerOne.m */; };
+		8E788DBD2449A5A6008A1526 /* CALayer+QBUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E788DBC2449A5A6008A1526 /* CALayer+QBUITheme.m */; };
+		8E788DC42449BC2C008A1526 /* QBDynamicColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E788DC32449BC2C008A1526 /* QBDynamicColor.m */; };
+		8E788DCB244A0B69008A1526 /* UIWindow+UserInterfaceStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E788DCA244A0B69008A1526 /* UIWindow+UserInterfaceStyle.m */; };
+		8E89A54D244B5FE000B9A644 /* UIApplication+QBUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E89A54C244B5FE000B9A644 /* UIApplication+QBUITheme.m */; };
+		8E89A550244B604E00B9A644 /* UIWindow+QBUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E89A54F244B604E00B9A644 /* UIWindow+QBUITheme.m */; };
+		8E89A553244B60B400B9A644 /* UIViewController+QBUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E89A552244B60B400B9A644 /* UIViewController+QBUITheme.m */; };
+		F2600C0DA12DDA832892ADCD /* Pods_QBUITheme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2350BFFCD70F818D54DF7604 /* Pods_QBUITheme.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E788D892448B3A9008A1526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E788D652448B3A7008A1526 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E788D6C2448B3A7008A1526;
+			remoteInfo = QBUITheme;
+		};
+		8E788D942448B3A9008A1526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E788D652448B3A7008A1526 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E788D6C2448B3A7008A1526;
+			remoteInfo = QBUITheme;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2350BFFCD70F818D54DF7604 /* Pods_QBUITheme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QBUITheme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51BCD945C9F0D39FAFD7EAC7 /* Pods_QBUIThemeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QBUIThemeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		596779569058AD271EA48D08 /* Pods-QBUIThemeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QBUIThemeTests.debug.xcconfig"; path = "Target Support Files/Pods-QBUIThemeTests/Pods-QBUIThemeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DD7845656C9A1101FE681E3 /* Pods-QBUITheme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QBUITheme.debug.xcconfig"; path = "Target Support Files/Pods-QBUITheme/Pods-QBUITheme.debug.xcconfig"; sourceTree = "<group>"; };
+		8E429C2D244A1282007B9BE0 /* QBUIThemeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QBUIThemeManager.h; sourceTree = "<group>"; };
+		8E429C2E244A1282007B9BE0 /* QBUIThemeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBUIThemeManager.m; sourceTree = "<group>"; };
+		8E6D7E08244B28DD0001DE00 /* QBUIThemeUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QBUIThemeUtils.h; sourceTree = "<group>"; };
+		8E6D7E09244B28DD0001DE00 /* QBUIThemeUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBUIThemeUtils.m; sourceTree = "<group>"; };
+		8E6D7E0C244B3CCB0001DE00 /* UIVisualEffectView+QBUITheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIVisualEffectView+QBUITheme.h"; sourceTree = "<group>"; };
+		8E6D7E0D244B3CCB0001DE00 /* UIVisualEffectView+QBUITheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIVisualEffectView+QBUITheme.m"; sourceTree = "<group>"; };
+		8E6D7E0F244B485E0001DE00 /* UIVisualEffect+QBUITheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIVisualEffect+QBUITheme.h"; sourceTree = "<group>"; };
+		8E6D7E10244B485E0001DE00 /* UIVisualEffect+QBUITheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIVisualEffect+QBUITheme.m"; sourceTree = "<group>"; };
+		8E6D7E12244B4B0E0001DE00 /* QBDynamicVisualEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QBDynamicVisualEffect.h; sourceTree = "<group>"; };
+		8E6D7E13244B4B0E0001DE00 /* QBDynamicVisualEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBDynamicVisualEffect.m; sourceTree = "<group>"; };
+		8E6D7E15244B54AD0001DE00 /* QBTraitEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QBTraitEnvironment.h; sourceTree = "<group>"; };
+		8E6D7E16244B55A40001DE00 /* UIView+QBUITheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+QBUITheme.h"; sourceTree = "<group>"; };
+		8E6D7E17244B55A40001DE00 /* UIView+QBUITheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+QBUITheme.m"; sourceTree = "<group>"; };
+		8E788D6D2448B3A7008A1526 /* QBUITheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBUITheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E788D702448B3A7008A1526 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8E788D712448B3A7008A1526 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8E788D732448B3A7008A1526 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		8E788D742448B3A7008A1526 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		8E788D762448B3A7008A1526 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8E788D772448B3A7008A1526 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8E788D7A2448B3A7008A1526 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E788D7C2448B3A9008A1526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E788D7F2448B3A9008A1526 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E788D812448B3A9008A1526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E788D822448B3A9008A1526 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E788D882448B3A9008A1526 /* QBUIThemeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QBUIThemeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E788D8C2448B3A9008A1526 /* QBUIThemeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBUIThemeTests.m; sourceTree = "<group>"; };
+		8E788D8E2448B3A9008A1526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E788D932448B3A9008A1526 /* QBUIThemeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QBUIThemeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E788D972448B3A9008A1526 /* QBUIThemeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBUIThemeUITests.m; sourceTree = "<group>"; };
+		8E788D992448B3A9008A1526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E788DA82448B6ED008A1526 /* UIColor+QBUITheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+QBUITheme.h"; sourceTree = "<group>"; };
+		8E788DA92448B6ED008A1526 /* UIColor+QBUITheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+QBUITheme.m"; sourceTree = "<group>"; };
+		8E788DAB2448BF4B008A1526 /* QBUITheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QBUITheme.h; sourceTree = "<group>"; };
+		8E788DAC2448C133008A1526 /* QBDynamicImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QBDynamicImage.h; sourceTree = "<group>"; };
+		8E788DAD2448C133008A1526 /* QBDynamicImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBDynamicImage.m; sourceTree = "<group>"; };
+		8E788DAF2448C3F8008A1526 /* UIImage+QBUITheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+QBUITheme.h"; sourceTree = "<group>"; };
+		8E788DB02448C3F8008A1526 /* UIImage+QBUITheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+QBUITheme.m"; sourceTree = "<group>"; };
+		8E788DB724499D4D008A1526 /* ViewControllerOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerOne.h; sourceTree = "<group>"; };
+		8E788DB824499D4D008A1526 /* ViewControllerOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerOne.m; sourceTree = "<group>"; };
+		8E788DBB2449A5A6008A1526 /* CALayer+QBUITheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+QBUITheme.h"; sourceTree = "<group>"; };
+		8E788DBC2449A5A6008A1526 /* CALayer+QBUITheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+QBUITheme.m"; sourceTree = "<group>"; };
+		8E788DC22449BC2C008A1526 /* QBDynamicColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QBDynamicColor.h; sourceTree = "<group>"; };
+		8E788DC32449BC2C008A1526 /* QBDynamicColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBDynamicColor.m; sourceTree = "<group>"; };
+		8E788DC9244A0B69008A1526 /* UIWindow+UserInterfaceStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+UserInterfaceStyle.h"; sourceTree = "<group>"; };
+		8E788DCA244A0B69008A1526 /* UIWindow+UserInterfaceStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+UserInterfaceStyle.m"; sourceTree = "<group>"; };
+		8E89A54B244B5FE000B9A644 /* UIApplication+QBUITheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+QBUITheme.h"; sourceTree = "<group>"; };
+		8E89A54C244B5FE000B9A644 /* UIApplication+QBUITheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+QBUITheme.m"; sourceTree = "<group>"; };
+		8E89A54E244B604E00B9A644 /* UIWindow+QBUITheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+QBUITheme.h"; sourceTree = "<group>"; };
+		8E89A54F244B604E00B9A644 /* UIWindow+QBUITheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+QBUITheme.m"; sourceTree = "<group>"; };
+		8E89A551244B60B400B9A644 /* UIViewController+QBUITheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+QBUITheme.h"; sourceTree = "<group>"; };
+		8E89A552244B60B400B9A644 /* UIViewController+QBUITheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+QBUITheme.m"; sourceTree = "<group>"; };
+		A2D13559D40F8AFAD017B7E1 /* Pods-QBUITheme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QBUITheme.release.xcconfig"; path = "Target Support Files/Pods-QBUITheme/Pods-QBUITheme.release.xcconfig"; sourceTree = "<group>"; };
+		B7B932669D09BBDE6D574857 /* Pods-QBUIThemeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QBUIThemeTests.release.xcconfig"; path = "Target Support Files/Pods-QBUIThemeTests/Pods-QBUIThemeTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E788D6A2448B3A7008A1526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2600C0DA12DDA832892ADCD /* Pods_QBUITheme.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E788D852448B3A9008A1526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FB62EAF59CC94C8A44C33EA /* Pods_QBUIThemeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E788D902448B3A9008A1526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28F7B56DFDDC66209C1EB032 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2350BFFCD70F818D54DF7604 /* Pods_QBUITheme.framework */,
+				51BCD945C9F0D39FAFD7EAC7 /* Pods_QBUIThemeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E6D7E19244B56780001DE00 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8E6D7E16244B55A40001DE00 /* UIView+QBUITheme.h */,
+				8E6D7E17244B55A40001DE00 /* UIView+QBUITheme.m */,
+				8E788DBB2449A5A6008A1526 /* CALayer+QBUITheme.h */,
+				8E788DBC2449A5A6008A1526 /* CALayer+QBUITheme.m */,
+				8E6D7E0C244B3CCB0001DE00 /* UIVisualEffectView+QBUITheme.h */,
+				8E6D7E0D244B3CCB0001DE00 /* UIVisualEffectView+QBUITheme.m */,
+				8E89A54B244B5FE000B9A644 /* UIApplication+QBUITheme.h */,
+				8E89A54C244B5FE000B9A644 /* UIApplication+QBUITheme.m */,
+				8E89A54E244B604E00B9A644 /* UIWindow+QBUITheme.h */,
+				8E89A54F244B604E00B9A644 /* UIWindow+QBUITheme.m */,
+				8E89A551244B60B400B9A644 /* UIViewController+QBUITheme.h */,
+				8E89A552244B60B400B9A644 /* UIViewController+QBUITheme.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8E788D642448B3A7008A1526 = {
+			isa = PBXGroup;
+			children = (
+				8E788D6F2448B3A7008A1526 /* QBUITheme */,
+				8E788D8B2448B3A9008A1526 /* QBUIThemeTests */,
+				8E788D962448B3A9008A1526 /* QBUIThemeUITests */,
+				8E788D6E2448B3A7008A1526 /* Products */,
+				9A8599B0198A4D722908D950 /* Pods */,
+				28F7B56DFDDC66209C1EB032 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8E788D6E2448B3A7008A1526 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E788D6D2448B3A7008A1526 /* QBUITheme.app */,
+				8E788D882448B3A9008A1526 /* QBUIThemeTests.xctest */,
+				8E788D932448B3A9008A1526 /* QBUIThemeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E788D6F2448B3A7008A1526 /* QBUITheme */ = {
+			isa = PBXGroup;
+			children = (
+				8E788DA52448B424008A1526 /* QBUITheme */,
+				8E788D702448B3A7008A1526 /* AppDelegate.h */,
+				8E788D712448B3A7008A1526 /* AppDelegate.m */,
+				8E788D732448B3A7008A1526 /* SceneDelegate.h */,
+				8E788D742448B3A7008A1526 /* SceneDelegate.m */,
+				8E788D762448B3A7008A1526 /* ViewController.h */,
+				8E788D772448B3A7008A1526 /* ViewController.m */,
+				8E788DB724499D4D008A1526 /* ViewControllerOne.h */,
+				8E788DB824499D4D008A1526 /* ViewControllerOne.m */,
+				8E788D792448B3A7008A1526 /* Main.storyboard */,
+				8E788D7C2448B3A9008A1526 /* Assets.xcassets */,
+				8E788D7E2448B3A9008A1526 /* LaunchScreen.storyboard */,
+				8E788D812448B3A9008A1526 /* Info.plist */,
+				8E788D822448B3A9008A1526 /* main.m */,
+			);
+			path = QBUITheme;
+			sourceTree = "<group>";
+		};
+		8E788D8B2448B3A9008A1526 /* QBUIThemeTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E788D8C2448B3A9008A1526 /* QBUIThemeTests.m */,
+				8E788D8E2448B3A9008A1526 /* Info.plist */,
+			);
+			path = QBUIThemeTests;
+			sourceTree = "<group>";
+		};
+		8E788D962448B3A9008A1526 /* QBUIThemeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8E788D972448B3A9008A1526 /* QBUIThemeUITests.m */,
+				8E788D992448B3A9008A1526 /* Info.plist */,
+			);
+			path = QBUIThemeUITests;
+			sourceTree = "<group>";
+		};
+		8E788DA52448B424008A1526 /* QBUITheme */ = {
+			isa = PBXGroup;
+			children = (
+				8E788DAB2448BF4B008A1526 /* QBUITheme.h */,
+				8E429C2D244A1282007B9BE0 /* QBUIThemeManager.h */,
+				8E429C2E244A1282007B9BE0 /* QBUIThemeManager.m */,
+				8E788DB22448C458008A1526 /* Utils */,
+				8E788DA62448B6B1008A1526 /* Core */,
+				8E6D7E19244B56780001DE00 /* Extensions */,
+			);
+			path = QBUITheme;
+			sourceTree = "<group>";
+		};
+		8E788DA62448B6B1008A1526 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8E6D7E15244B54AD0001DE00 /* QBTraitEnvironment.h */,
+				8E788DC9244A0B69008A1526 /* UIWindow+UserInterfaceStyle.h */,
+				8E788DCA244A0B69008A1526 /* UIWindow+UserInterfaceStyle.m */,
+				8E788DAC2448C133008A1526 /* QBDynamicImage.h */,
+				8E788DAD2448C133008A1526 /* QBDynamicImage.m */,
+				8E788DC22449BC2C008A1526 /* QBDynamicColor.h */,
+				8E788DC32449BC2C008A1526 /* QBDynamicColor.m */,
+				8E788DA82448B6ED008A1526 /* UIColor+QBUITheme.h */,
+				8E788DA92448B6ED008A1526 /* UIColor+QBUITheme.m */,
+				8E788DAF2448C3F8008A1526 /* UIImage+QBUITheme.h */,
+				8E788DB02448C3F8008A1526 /* UIImage+QBUITheme.m */,
+				8E6D7E12244B4B0E0001DE00 /* QBDynamicVisualEffect.h */,
+				8E6D7E13244B4B0E0001DE00 /* QBDynamicVisualEffect.m */,
+				8E6D7E0F244B485E0001DE00 /* UIVisualEffect+QBUITheme.h */,
+				8E6D7E10244B485E0001DE00 /* UIVisualEffect+QBUITheme.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8E788DB22448C458008A1526 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8E6D7E08244B28DD0001DE00 /* QBUIThemeUtils.h */,
+				8E6D7E09244B28DD0001DE00 /* QBUIThemeUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9A8599B0198A4D722908D950 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DD7845656C9A1101FE681E3 /* Pods-QBUITheme.debug.xcconfig */,
+				A2D13559D40F8AFAD017B7E1 /* Pods-QBUITheme.release.xcconfig */,
+				596779569058AD271EA48D08 /* Pods-QBUIThemeTests.debug.xcconfig */,
+				B7B932669D09BBDE6D574857 /* Pods-QBUIThemeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E788D6C2448B3A7008A1526 /* QBUITheme */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E788D9C2448B3A9008A1526 /* Build configuration list for PBXNativeTarget "QBUITheme" */;
+			buildPhases = (
+				6DAFB6C37AFA58E203717B08 /* [CP] Check Pods Manifest.lock */,
+				8E788D692448B3A7008A1526 /* Sources */,
+				8E788D6A2448B3A7008A1526 /* Frameworks */,
+				8E788D6B2448B3A7008A1526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QBUITheme;
+			productName = QBUITheme;
+			productReference = 8E788D6D2448B3A7008A1526 /* QBUITheme.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E788D872448B3A9008A1526 /* QBUIThemeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E788D9F2448B3A9008A1526 /* Build configuration list for PBXNativeTarget "QBUIThemeTests" */;
+			buildPhases = (
+				36576DD08D75DEF2A1A090BB /* [CP] Check Pods Manifest.lock */,
+				8E788D842448B3A9008A1526 /* Sources */,
+				8E788D852448B3A9008A1526 /* Frameworks */,
+				8E788D862448B3A9008A1526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E788D8A2448B3A9008A1526 /* PBXTargetDependency */,
+			);
+			name = QBUIThemeTests;
+			productName = QBUIThemeTests;
+			productReference = 8E788D882448B3A9008A1526 /* QBUIThemeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8E788D922448B3A9008A1526 /* QBUIThemeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E788DA22448B3A9008A1526 /* Build configuration list for PBXNativeTarget "QBUIThemeUITests" */;
+			buildPhases = (
+				8E788D8F2448B3A9008A1526 /* Sources */,
+				8E788D902448B3A9008A1526 /* Frameworks */,
+				8E788D912448B3A9008A1526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E788D952448B3A9008A1526 /* PBXTargetDependency */,
+			);
+			name = QBUIThemeUITests;
+			productName = QBUIThemeUITests;
+			productReference = 8E788D932448B3A9008A1526 /* QBUIThemeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E788D652448B3A7008A1526 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "覃斌 卢   ";
+				TargetAttributes = {
+					8E788D6C2448B3A7008A1526 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					8E788D872448B3A9008A1526 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 8E788D6C2448B3A7008A1526;
+					};
+					8E788D922448B3A9008A1526 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 8E788D6C2448B3A7008A1526;
+					};
+				};
+			};
+			buildConfigurationList = 8E788D682448B3A7008A1526 /* Build configuration list for PBXProject "QBUITheme" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E788D642448B3A7008A1526;
+			productRefGroup = 8E788D6E2448B3A7008A1526 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E788D6C2448B3A7008A1526 /* QBUITheme */,
+				8E788D872448B3A9008A1526 /* QBUIThemeTests */,
+				8E788D922448B3A9008A1526 /* QBUIThemeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E788D6B2448B3A7008A1526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E788D802448B3A9008A1526 /* LaunchScreen.storyboard in Resources */,
+				8E788D7D2448B3A9008A1526 /* Assets.xcassets in Resources */,
+				8E788D7B2448B3A7008A1526 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E788D862448B3A9008A1526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E788D912448B3A9008A1526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36576DD08D75DEF2A1A090BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QBUIThemeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DAFB6C37AFA58E203717B08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QBUITheme-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E788D692448B3A7008A1526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E6D7E0A244B28DD0001DE00 /* QBUIThemeUtils.m in Sources */,
+				8E788DCB244A0B69008A1526 /* UIWindow+UserInterfaceStyle.m in Sources */,
+				8E788DB924499D4D008A1526 /* ViewControllerOne.m in Sources */,
+				8E788D782448B3A7008A1526 /* ViewController.m in Sources */,
+				8E788DAE2448C133008A1526 /* QBDynamicImage.m in Sources */,
+				8E788D722448B3A7008A1526 /* AppDelegate.m in Sources */,
+				8E6D7E18244B55A40001DE00 /* UIView+QBUITheme.m in Sources */,
+				8E788DC42449BC2C008A1526 /* QBDynamicColor.m in Sources */,
+				8E6D7E11244B485E0001DE00 /* UIVisualEffect+QBUITheme.m in Sources */,
+				8E429C2F244A1282007B9BE0 /* QBUIThemeManager.m in Sources */,
+				8E788D832448B3A9008A1526 /* main.m in Sources */,
+				8E788DAA2448B6ED008A1526 /* UIColor+QBUITheme.m in Sources */,
+				8E6D7E14244B4B0E0001DE00 /* QBDynamicVisualEffect.m in Sources */,
+				8E89A550244B604E00B9A644 /* UIWindow+QBUITheme.m in Sources */,
+				8E6D7E0E244B3CCB0001DE00 /* UIVisualEffectView+QBUITheme.m in Sources */,
+				8E788DB12448C3F8008A1526 /* UIImage+QBUITheme.m in Sources */,
+				8E89A54D244B5FE000B9A644 /* UIApplication+QBUITheme.m in Sources */,
+				8E788DBD2449A5A6008A1526 /* CALayer+QBUITheme.m in Sources */,
+				8E788D752448B3A7008A1526 /* SceneDelegate.m in Sources */,
+				8E89A553244B60B400B9A644 /* UIViewController+QBUITheme.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E788D842448B3A9008A1526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E788D8D2448B3A9008A1526 /* QBUIThemeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E788D8F2448B3A9008A1526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E788D982448B3A9008A1526 /* QBUIThemeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E788D8A2448B3A9008A1526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E788D6C2448B3A7008A1526 /* QBUITheme */;
+			targetProxy = 8E788D892448B3A9008A1526 /* PBXContainerItemProxy */;
+		};
+		8E788D952448B3A9008A1526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E788D6C2448B3A7008A1526 /* QBUITheme */;
+			targetProxy = 8E788D942448B3A9008A1526 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E788D792448B3A7008A1526 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E788D7A2448B3A7008A1526 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E788D7E2448B3A9008A1526 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E788D7F2448B3A9008A1526 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E788D9A2448B3A9008A1526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8E788D9B2448B3A9008A1526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E788D9D2448B3A9008A1526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DD7845656C9A1101FE681E3 /* Pods-QBUITheme.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ER283WPG8S;
+				INFOPLIST_FILE = QBUITheme/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lqb.QBUITheme;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E788D9E2448B3A9008A1526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2D13559D40F8AFAD017B7E1 /* Pods-QBUITheme.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ER283WPG8S;
+				INFOPLIST_FILE = QBUITheme/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lqb.QBUITheme;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8E788DA02448B3A9008A1526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 596779569058AD271EA48D08 /* Pods-QBUIThemeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ER283WPG8S;
+				INFOPLIST_FILE = QBUIThemeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lqb.QBUIThemeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QBUITheme.app/QBUITheme";
+			};
+			name = Debug;
+		};
+		8E788DA12448B3A9008A1526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7B932669D09BBDE6D574857 /* Pods-QBUIThemeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ER283WPG8S;
+				INFOPLIST_FILE = QBUIThemeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lqb.QBUIThemeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QBUITheme.app/QBUITheme";
+			};
+			name = Release;
+		};
+		8E788DA32448B3A9008A1526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ER283WPG8S;
+				INFOPLIST_FILE = QBUIThemeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lqb.QBUIThemeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QBUITheme;
+			};
+			name = Debug;
+		};
+		8E788DA42448B3A9008A1526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ER283WPG8S;
+				INFOPLIST_FILE = QBUIThemeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lqb.QBUIThemeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QBUITheme;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E788D682448B3A7008A1526 /* Build configuration list for PBXProject "QBUITheme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E788D9A2448B3A9008A1526 /* Debug */,
+				8E788D9B2448B3A9008A1526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E788D9C2448B3A9008A1526 /* Build configuration list for PBXNativeTarget "QBUITheme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E788D9D2448B3A9008A1526 /* Debug */,
+				8E788D9E2448B3A9008A1526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E788D9F2448B3A9008A1526 /* Build configuration list for PBXNativeTarget "QBUIThemeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E788DA02448B3A9008A1526 /* Debug */,
+				8E788DA12448B3A9008A1526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E788DA22448B3A9008A1526 /* Build configuration list for PBXNativeTarget "QBUIThemeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E788DA32448B3A9008A1526 /* Debug */,
+				8E788DA42448B3A9008A1526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E788D652448B3A7008A1526 /* Project object */;
+}
