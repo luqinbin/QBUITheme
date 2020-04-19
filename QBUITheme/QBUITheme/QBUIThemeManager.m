@@ -8,7 +8,6 @@
 
 #import "QBUIThemeManager.h"
 #import "UIWindow+UserInterfaceStyle.h"
-#import "SceneDelegate.h"
 #import "CALayer+QBUITheme.h"
 #import "UIApplication+QBUITheme.h"
 

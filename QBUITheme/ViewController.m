@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "QBUITheme.h"
 #import "ViewControllerOne.h"
-#import "SceneDelegate.h"
 #import "UIVisualEffectView+QBUITheme.h"
 
 @interface ViewController ()
