@@ -69,6 +69,12 @@
     
     [self.view addSubview:self.refreshBtn];
     
+    UIBlurEffect *blurEffect = (UIBlurEffect *)[UIBlurEffect qbDynamicEffectWithLightEffectProvider:^UIVisualEffect * _Nonnull{
+        return [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    } darkEffectProvider:^UIVisualEffect * _Nonnull{
+        return [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+    }];
+    
 //    effectView.effect = blurEffect3;
     
     self.view.layer.contents = image;//(__bridge id)image.CGImage;
@@ -102,7 +108,7 @@
     
 //    UIColor *cgColor = [UIColor qbDynamicColorWithLightColor:UIColor.grayColor darkColor:UIColor.purpleColor];
     self.view.layer.backgroundColor = staticCast(dyColor);
-//    self.view.backgroundColor = cgColor;
+//    self.view.backgroundColor = dyColor;
     
     self.lightBtn.layer.borderColor = staticCast([UIColor dynamicColorWithLightColor:UIColor.yellowColor darkColor:UIColor.whiteColor]);
     self.lightBtn.layer.borderWidth = 10;

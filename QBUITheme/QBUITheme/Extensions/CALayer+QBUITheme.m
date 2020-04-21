@@ -35,10 +35,6 @@ static char * const QBContentsKey = "QBLayerContentsKey";
         QBOverrideImplementation([CALayer class], @selector(setBackgroundColor:), ^id _Nonnull(__unsafe_unretained Class  _Nonnull originClass, SEL  _Nonnull originCMD, IMP  _Nonnull (^ _Nonnull originalIMPProvider)(void)) {
             return ^(CALayer *selfObject, CGColorRef colorRef) {
                 id color = (__bridge id) colorRef;
-                if (colorRef == nil) {
-                    return;
-                }
-                
                 CGColorRef bgColor = colorRef;
                 if ([color isKindOfClass:[UIColor class]]) {
                     selfObject.qbBackgroundColor = color;
@@ -61,10 +57,6 @@ static char * const QBContentsKey = "QBLayerContentsKey";
         QBOverrideImplementation([CALayer class], @selector(setBorderColor:), ^id _Nonnull(__unsafe_unretained Class  _Nonnull originClass, SEL  _Nonnull originCMD, IMP  _Nonnull (^ _Nonnull originalIMPProvider)(void)) {
             return ^(CALayer *selfObject, CGColorRef colorRef) {
                 id color = (__bridge id) colorRef;
-                if (colorRef == nil) {
-                    return;
-                }
-                
                 CGColorRef bgColor = colorRef;
                 if ([color isKindOfClass:[UIColor class]]) {
                     selfObject.qbBorderColor = color;
@@ -86,10 +78,6 @@ static char * const QBContentsKey = "QBLayerContentsKey";
         
         QBOverrideImplementation([CALayer class], @selector(setContents:), ^id _Nonnull(__unsafe_unretained Class  _Nonnull originClass, SEL  _Nonnull originCMD, IMP  _Nonnull (^ _Nonnull originalIMPProvider)(void)) {
             return ^(CALayer *selfObject, id argv) {
-                if (argv == nil) {
-                    return;
-                }
-
                 CGImageRef realCGImage = (__bridge CGImageRef)(argv);
                 if (object_getClass(argv) == QBDynamicImageProxy.class) {
                     selfObject.qbContents = argv;
@@ -152,19 +140,19 @@ static char * const QBContentsKey = "QBLayerContentsKey";
 
 #pragma mark - QBTraitEnvironment protocol
 - (void)qbTraitCollectionDidChange:(UITraitCollection *_Nullable)previousTraitCollection {
-    if (self.backgroundColor) {
+    if (self.qbBackgroundColor) {
         self.backgroundColor = (__bridge void *)self.qbBackgroundColor;
     }
     
-    if (self.borderColor) {
+    if (self.qbBorderColor) {
         self.borderColor = (__bridge void *)self.qbBorderColor;
     }
     
-    if (self.shadowColor) {
+    if (self.qbShadowColor) {
         self.shadowColor = (__bridge void *)self.qbShadowColor;
     }
     
-    if (self.contents) {
+    if (self.qbContents) {
         self.contents = self.qbContents;
     }
     

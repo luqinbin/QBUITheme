@@ -83,7 +83,7 @@ static char * const QBVisualEffectKey = "QBVisualEffectKey";
 #pragma mark - QBTraitEnvironment protocol
 - (void)qbTraitCollectionDidChange:(UITraitCollection *_Nullable)previousTraitCollection {
     [super qbTraitCollectionDidChange:previousTraitCollection];
-    if (self.effect) {
+    if (self.qbEffect) {
         self.effect = self.qbEffect;
     }
 }
