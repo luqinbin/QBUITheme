@@ -185,7 +185,7 @@ self.view.layer.contents = (__bridge id)([UIImage imageName:@"image1"].CGImage);
 
 \+ (UIImage *)qbDynamicImageWithLightImage:(UIImage *)lightImage darkImage:(UIImage *)darkImage；
 
-不推荐使用iOS13新增的Assets模版，向低版本兼容是个大麻烦！（谁知道未来PM会不会提需求要求iOS12及以下的版本也要适配暗黑主题呢）
+不推荐使用iOS13新增的Assets模版，向低版本兼容是个大麻烦！
 
 ####  
 
