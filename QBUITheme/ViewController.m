@@ -20,6 +20,7 @@
 @property (strong, nonatomic) UIButton *lightBtn;
 @property (strong, nonatomic) UIButton *darkBtn;
 @property (strong, nonatomic) UIButton *autoBtn;
+@property (strong, nonatomic) UITextField *textField;
 
 @end
 
@@ -112,6 +113,10 @@
     
     self.lightBtn.layer.borderColor = staticCast([UIColor dynamicColorWithLightColor:UIColor.yellowColor darkColor:UIColor.whiteColor]);
     self.lightBtn.layer.borderWidth = 10;
+    
+    self.textField = [[UITextField alloc]initWithFrame:CGRectMake(100, 120, 200, 60)];
+    self.textField.backgroundColor = UIColor.blueColor;
+    [self.view addSubview:self.textField];
 }
 
 - (void)refreshBtnClick {
